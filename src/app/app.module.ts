@@ -10,6 +10,7 @@ import { CollectionItemComponent } from './components/home/collection-item/colle
 import { LandingComponent } from './components/home/landing/landing.component';
 import { TrendingComponent } from './components/home/trending/trending.component';
 import { TrendingItemComponent } from './components/home/trending-item/trending-item.component';
+import { FeaturesComponent } from './components/home/features/features.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TrendingItemComponent } from './components/home/trending-item/trending-
     CollectionItemComponent,
     LandingComponent,
     TrendingComponent,
-    TrendingItemComponent
+    TrendingItemComponent,
+    FeaturesComponent
   ],
   imports: [
     BrowserModule,

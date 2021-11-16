@@ -1,3 +1,8 @@
 .container {
   padding: 0 4rem;
+
+  &.f {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
 }
