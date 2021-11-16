@@ -4,9 +4,33 @@
   position: relative;
 
   .details {
-    bottom: 0;
-    left: 10px;
+    bottom: 15px;
     position: absolute;
     z-index: 1;
+    width: 100%;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+
+    .dtl-btn {
+      color: black;
+      padding: 10px 12px;
+      border: 1px solid black;
+      transition: all 0.3s;
+      border-radius: 50%;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    img {
+      opacity: 0.8;
+    }
+    .dtl-btn {
+      color: #fff !important;
+      background: black;
+    }
   }
 }
