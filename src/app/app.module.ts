@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { CollectionsComponent } from './components/home/collections/collections.component';
 import { IndexComponent } from './components/home/index/index.component';
 import { CollectionItemComponent } from './components/home/collection-item/collection-item.component';
+import { LandingComponent } from './components/home/landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CollectionItemComponent } from './components/home/collection-item/colle
     NavbarComponent,
     CollectionsComponent,
     IndexComponent,
-    CollectionItemComponent
+    CollectionItemComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
