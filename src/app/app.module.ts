@@ -8,6 +8,8 @@ import { CollectionsComponent } from './components/home/collections/collections.
 import { IndexComponent } from './components/home/index/index.component';
 import { CollectionItemComponent } from './components/home/collection-item/collection-item.component';
 import { LandingComponent } from './components/home/landing/landing.component';
+import { TrendingComponent } from './components/home/trending/trending.component';
+import { TrendingItemComponent } from './components/home/trending-item/trending-item.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { LandingComponent } from './components/home/landing/landing.component';
     CollectionsComponent,
     IndexComponent,
     CollectionItemComponent,
-    LandingComponent
+    LandingComponent,
+    TrendingComponent,
+    TrendingItemComponent
   ],
   imports: [
     BrowserModule,
