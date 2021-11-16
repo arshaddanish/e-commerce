@@ -11,6 +11,7 @@ import { LandingComponent } from './components/home/landing/landing.component';
 import { TrendingComponent } from './components/home/trending/trending.component';
 import { TrendingItemComponent } from './components/home/trending-item/trending-item.component';
 import { FeaturesComponent } from './components/home/features/features.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FeaturesComponent } from './components/home/features/features.component
     LandingComponent,
     TrendingComponent,
     TrendingItemComponent,
-    FeaturesComponent
+    FeaturesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
