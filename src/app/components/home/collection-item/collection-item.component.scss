@@ -1,0 +1,12 @@
+.collection-item {
+  width: 250px;
+  height: 300px;
+  position: relative;
+
+  .details {
+    bottom: 0;
+    left: 10px;
+    position: absolute;
+    z-index: 1;
+  }
+}

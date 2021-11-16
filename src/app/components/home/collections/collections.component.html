@@ -1,4 +1,6 @@
 <div class="collections">
   <h2>Collections</h2>
-  <app-collection-item *ngFor="let collection of collections" [collection]="collection"></app-collection-item>
+  <div class="items">
+    <app-collection-item *ngFor="let collection of collections" [collection]="collection"></app-collection-item>
+  </div>
 </div>
