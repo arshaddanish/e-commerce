@@ -1,1 +1,6 @@
-<p>trending works!</p>
+<div class="trending">
+  <h2>Trending</h2>
+  <div class="items">
+    <app-trending-item *ngFor="let trending of trendings" [trending]="trending"></app-trending-item>
+  </div>
+</div>

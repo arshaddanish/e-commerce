@@ -1,0 +1,15 @@
+.trending {
+  padding: 4rem 0;
+
+  h2 {
+    font-size: 2rem;
+    font-family: "";
+    margin-bottom: 2rem;
+  }
+
+  .items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2.5rem;
+  }
+}

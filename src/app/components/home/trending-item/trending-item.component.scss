@@ -1,0 +1,13 @@
+.trending-item {
+  img {
+    width: 250px;
+    height: 300px;
+    margin-bottom: 0.5rem;
+  }
+
+  &:hover {
+    img {
+      opacity: 0.8;
+    }
+  }
+}
