@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { collections } from "../../../collections"
-import { COLLECTION } from "../../../COLLECTION"
+import { collections } from "../../../data/collections"
+import { COLLECTION } from "../../../data/COLLECTION"
 
 @Component({
   selector: 'app-collections',

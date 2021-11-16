@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { COLLECTION } from 'src/app/COLLECTION';
+import { COLLECTION } from 'src/app/data/COLLECTION';
 
 @Component({
   selector: 'app-collection-item',
