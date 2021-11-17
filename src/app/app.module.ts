@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,8 @@ import { FeaturesComponent } from './components/home/features/features.component
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/account/login/login.component';
 import { RegisterComponent } from './components/account/register/register.component';
+import { ForgotPasswordComponent } from './components/account/forgot-password/forgot-password.component';
+import { ResetPasswordComponent } from './components/account/reset-password/reset-password.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +31,14 @@ import { RegisterComponent } from './components/account/register/register.compon
     FeaturesComponent,
     FooterComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ForgotPasswordComponent,
+    ResetPasswordComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

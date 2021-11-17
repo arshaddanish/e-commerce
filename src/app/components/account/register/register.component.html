@@ -1,15 +1,24 @@
 <div class="login">
   <div class="login-box">
     <h2>Register</h2>
-    <form autocomplete="off">
+    <form autocomplete="off" (ngSubmit)="onSubmit()">
+      <div>
+        <input type="text" name="name" id="" placeholder="Name" />
+      </div>
+      <div>
+        <input type="text" name="phone" id="" placeholder="Phone No" />
+      </div>
       <div>
         <input type="email" name="email" id="" placeholder="Email" />
       </div>
       <div>
-        <input type="password" name="password" id="" placeholder="Password" />
+        <input type="text" name="password" id="" placeholder="Password" />
       </div>
       <div>
-        <input type="submit" value="Register" class="login-btn"/>
+        <input type="password" name="confirmPassword" id="" placeholder="Confirm Password" />
+      </div>
+      <div>
+        <input type="submit" value="Register" class="login-btn" />
       </div>
       <div class="forgot">
         Already have an account? <a routerLink="/login">Login now</a>
