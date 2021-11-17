@@ -12,6 +12,8 @@ import { TrendingComponent } from './components/home/trending/trending.component
 import { TrendingItemComponent } from './components/home/trending-item/trending-item.component';
 import { FeaturesComponent } from './components/home/features/features.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LoginComponent } from './components/account/login/login.component';
+import { RegisterComponent } from './components/account/register/register.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { FooterComponent } from './components/footer/footer.component';
     TrendingComponent,
     TrendingItemComponent,
     FeaturesComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

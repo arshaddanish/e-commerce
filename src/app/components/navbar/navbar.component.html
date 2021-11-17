@@ -1,6 +1,6 @@
 <div class="navbar">
   <div class="brand">
-    <h1>Ecommerce</h1>
+    <h1 (click)="redirect('/')">Ecommerce</h1>
   </div>
   <div class="nav-items">
     <div class="icon">
@@ -11,7 +11,7 @@
         </path>
       </svg>
     </div>
-    <div class="icon">
+    <div class="icon" (click)="redirect('/login')">
       <svg class="w-[20px] h-[20px]" fill="currentColor" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 448 512">
         <path
