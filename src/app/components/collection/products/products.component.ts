@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TRENDING } from 'src/app/data/TRENDING';
 import { trendings } from 'src/app/data/trendings';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-products',
@@ -9,10 +10,12 @@ import { trendings } from 'src/app/data/trendings';
 })
 export class ProductsComponent implements OnInit {
   products: TRENDING[] = trendings;
+  collection: string;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.collection = this.route.snapshot.params['name'];
   }
 
 }

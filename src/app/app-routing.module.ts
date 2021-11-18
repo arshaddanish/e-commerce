@@ -29,7 +29,7 @@ const routes: Routes = [
     component: ResetPasswordComponent
   },
   {
-    path: "collection",
+    path: "collection/:name",
     component: ProductsComponent
   }
 ];
