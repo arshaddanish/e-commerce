@@ -16,8 +16,8 @@
 
     .dtl-btn {
       color: black;
+      background-color: #fff;
       padding: 10px 12px;
-      border: 1px solid black;
       transition: all 0.3s;
       border-radius: 50%;
     }
@@ -30,7 +30,7 @@
     }
     .dtl-btn {
       color: #fff !important;
-      background: black;
+      background: black !important;
     }
   }
 }
