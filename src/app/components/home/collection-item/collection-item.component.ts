@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { COLLECTION } from 'src/app/data/COLLECTION';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-collection-item',
@@ -9,9 +10,12 @@ import { COLLECTION } from 'src/app/data/COLLECTION';
 export class CollectionItemComponent implements OnInit {
   @Input() collection: COLLECTION;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  redirect(pagename: string) {
+    this.router.navigate([pagename]);
+  }
 }

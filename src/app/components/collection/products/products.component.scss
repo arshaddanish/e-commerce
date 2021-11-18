@@ -1,0 +1,16 @@
+.products {
+  padding: 4rem 4rem;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+
+  .items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    row-gap: 2.5rem;
+  }
+}
