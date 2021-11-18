@@ -9,11 +9,13 @@
   h2 {
     font-size: 2rem;
     margin-bottom: 2.5rem;
+    text-align: center;
   }
 
   .items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 2rem;
+    justify-items: center;
   }
 }
