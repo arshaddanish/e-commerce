@@ -1,0 +1,24 @@
+<div class="login">
+  <div class="login-box">
+    <h2>Account Details</h2>
+    <form autocomplete="off" (ngSubmit)="onSubmit()">
+      <div>
+        <input type="text" name="name" id="" placeholder="Name" />
+      </div>
+      <div>
+        <input type="text" name="phone" id="" placeholder="Phone No" />
+      </div>
+      <select name="" id="">
+        <option value="" selected disabled>Account Type</option>
+        <option value="wholesaler"><span>Wholesaler</span></option>
+        <option value="retailer">Retailer</option>
+      </select>
+      <div>
+        <input type="email" name="email" id="" placeholder="Email" />
+      </div>
+      <div>
+        <input type="submit" value="Save" class="login-btn r" />
+      </div>
+    </form>
+  </div>
+</div>
