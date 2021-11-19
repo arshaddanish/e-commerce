@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccountDetailsComponent } from './components/account/account-details/account-details.component';
+import { EditAccountDetailsComponent } from './components/account/edit-account-details/edit-account-details.component';
+import { EditAddressComponent } from './components/account/edit-address/edit-address.component';
 import { ForgotPasswordComponent } from './components/account/forgot-password/forgot-password.component';
 import { LoginComponent } from './components/account/login/login.component';
 import { RegisterComponent } from './components/account/register/register.component';
@@ -20,6 +22,14 @@ const routes: Routes = [
   {
     path: "account",
     component: AccountDetailsComponent
+  },
+  {
+    path: "account/edit-account-details",
+    component: EditAccountDetailsComponent
+  },
+  {
+    path: "account/edit-address",
+    component: EditAddressComponent
   },
   {
     path: "register",

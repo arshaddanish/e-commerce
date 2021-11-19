@@ -21,6 +21,8 @@ import { ProductsComponent } from './components/collection/products/products.com
 import { ProductItemComponent } from './components/collection/product-item/product-item.component';
 import { ProductDetailsComponent } from './components/collection/product-details/product-details.component';
 import { AccountDetailsComponent } from './components/account/account-details/account-details.component';
+import { EditAccountDetailsComponent } from './components/account/edit-account-details/edit-account-details.component';
+import { EditAddressComponent } from './components/account/edit-address/edit-address.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { AccountDetailsComponent } from './components/account/account-details/ac
     ProductsComponent,
     ProductItemComponent,
     ProductDetailsComponent,
-    AccountDetailsComponent
+    AccountDetailsComponent,
+    EditAccountDetailsComponent,
+    EditAddressComponent
   ],
   imports: [
     BrowserModule,
