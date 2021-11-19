@@ -9,6 +9,7 @@ import { RegisterComponent } from './components/account/register/register.compon
 import { ResetPasswordComponent } from './components/account/reset-password/reset-password.component';
 import { ProductDetailsComponent } from './components/collection/product-details/product-details.component';
 import { ProductsComponent } from './components/collection/products/products.component';
+import { CollectionsComponent } from './components/home/collections/collections.component';
 import { IndexComponent } from './components/home/index/index.component';
 
 const routes: Routes = [
@@ -51,6 +52,10 @@ const routes: Routes = [
   {
     path: "collection/:name/:product",
     component: ProductDetailsComponent
+  },
+  {
+    path: "collections",
+    component: CollectionsComponent
   }
 ];
 
