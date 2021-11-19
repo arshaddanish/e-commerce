@@ -49,6 +49,10 @@
       background: black;
       border: none;
 
+      &.r {
+        margin-top: 1rem;
+      }
+
       &:hover {
         cursor: pointer;
       }

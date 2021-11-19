@@ -19,6 +19,8 @@ import { ForgotPasswordComponent } from './components/account/forgot-password/fo
 import { ResetPasswordComponent } from './components/account/reset-password/reset-password.component';
 import { ProductsComponent } from './components/collection/products/products.component';
 import { ProductItemComponent } from './components/collection/product-item/product-item.component';
+import { ProductDetailsComponent } from './components/collection/product-details/product-details.component';
+import { AccountDetailsComponent } from './components/account/account-details/account-details.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { ProductItemComponent } from './components/collection/product-item/produ
     ForgotPasswordComponent,
     ResetPasswordComponent,
     ProductsComponent,
-    ProductItemComponent
+    ProductItemComponent,
+    ProductDetailsComponent,
+    AccountDetailsComponent
   ],
   imports: [
     BrowserModule,
