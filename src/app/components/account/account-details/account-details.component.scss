@@ -67,6 +67,16 @@
 
     th {
       text-align: left;
+      color: #fff;
+      background: #4c4c4c;
+    }
+
+    tr:nth-child(even) {
+      background: #eee;
+    }
+
+    td:first-child, th:first-child {
+      padding-left: 1rem;
     }
   }
 }
