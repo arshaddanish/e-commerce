@@ -3,6 +3,10 @@
   height: 300px;
   position: relative;
 
+  img {
+    transition: transform .2s;
+  }
+
   .details {
     bottom: 15px;
     position: absolute;
@@ -13,6 +17,11 @@
     grid-template-columns: auto auto;
     justify-content: space-between;
     align-items: center;
+
+    p {
+      color: #666;
+      font-size: 0.8rem;
+    }
 
     .dtl-btn {
       color: black;
@@ -26,7 +35,7 @@
   &:hover {
     cursor: pointer;
     img {
-      opacity: 0.8;
+      transform: scale(1.05);
     }
     .dtl-btn {
       color: #fff !important;
