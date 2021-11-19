@@ -50,13 +50,13 @@
 
     input[type="submit"] {
       height: 45px;
-      font-size: 1.25rem !important;
+      font-size: 1.1rem !important;
       font-weight: 600;
     }
 
     .login-btn {
       color: #fff;
-      background: black;
+      background-color: #343a40;
       border: none;
 
       &.r {
@@ -65,6 +65,7 @@
 
       &:hover {
         cursor: pointer;
+        background-color: #23272b;
       }
     }
   }

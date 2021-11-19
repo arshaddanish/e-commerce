@@ -47,13 +47,14 @@
     font-family: "Nunito", sans-serif;
     font-size: 1rem;
     color: #fff;
-    background: black;
+    background-color: #343a40;
     border: none;
     padding: 10px 40px;
-    border-radius: 5px;
+    border-radius: 10px;
 
     &:hover {
       cursor: pointer;
+      background-color: #23272b;
     }
   }
 
@@ -75,7 +76,8 @@
       background: #eee;
     }
 
-    td:first-child, th:first-child {
+    td:first-child,
+    th:first-child {
       padding-left: 1rem;
     }
   }
