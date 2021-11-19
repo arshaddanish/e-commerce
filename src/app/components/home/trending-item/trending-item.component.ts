@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { TRENDING } from 'src/app/data/TRENDING';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-trending-item',
@@ -9,9 +10,12 @@ import { TRENDING } from 'src/app/data/TRENDING';
 export class TrendingItemComponent implements OnInit {
   @Input() trending: TRENDING;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  redirect(pagename: string) {
+    this.router.navigate([pagename]);
+  }
 }

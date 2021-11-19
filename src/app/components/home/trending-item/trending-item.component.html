@@ -1,4 +1,4 @@
-<div class="trending-item">
+<div class="trending-item" (click)="redirect('/collection/'+trending.collection+'/'+trending.item)">
   <img src={{trending.img}} alt="">
   <div class="details">
     <h3>{{trending.item}}</h3>
