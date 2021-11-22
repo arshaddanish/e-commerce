@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -51,6 +52,7 @@ import { EditAddressComponent } from './components/account/edit-address/edit-add
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    IvyCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
