@@ -1,1 +1,85 @@
-<p>{{collection}} > {{product}}</p>
+<div class="product-details">
+  <div class="dtl-box">
+    <div class="carousel-box">
+      <carousel
+        [images]="images"
+        [width]="carouselWidth"
+        [height]="carouselHeight"
+        [objectFit]="'cover'"
+        [cellWidth]="'100%'"
+        [autoplay]="true"
+        [dots]="true"
+        [loop]="true"
+      >
+      </carousel>
+    </div>
+
+    <div class="buy-box">
+      <div class="title">
+        <h3>{{ productName }}</h3>
+        <p>Rs {{ product.cost }}</p>
+      </div>
+
+      <form>
+        <p class="quantity">Quantity</p>
+        <div class="count">
+          <i class="fas fa-minus" (click)="decrCount()"></i>
+          <input
+            type="number"
+            name="count"
+            [(ngModel)]="count"
+            value="{{ count }}"
+            onkeypress="return event.charCode >= 48"
+          />
+          <i class="fas fa-plus" (click)="incrCount()"></i>
+        </div>
+        <div>
+          <input type="submit" value="Add to cart" class="login-btn" />
+        </div>
+        <div class="extra">
+          <div class="row">
+            <svg
+              class="w-[20px] h-[20px] delivery"
+              fill="currentColor"
+              stroke="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+            >
+              <path
+                d="M280 192c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8H40c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h240zm352 192h-24V275.9c0-16.8-6.8-33.3-18.8-45.2l-83.9-83.9c-11.8-12-28.3-18.8-45.2-18.8H416V78.6c0-25.7-22.2-46.6-49.4-46.6H113.4C86.2 32 64 52.9 64 78.6V96H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h240c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8H96V78.6c0-8.1 7.8-14.6 17.4-14.6h253.2c9.6 0 17.4 6.5 17.4 14.6V384H207.6C193 364.7 170 352 144 352c-18.1 0-34.6 6.2-48 16.4V288H64v144c0 44.2 35.8 80 80 80s80-35.8 80-80c0-5.5-.6-10.8-1.6-16h195.2c-1.1 5.2-1.6 10.5-1.6 16 0 44.2 35.8 80 80 80s80-35.8 80-80c0-5.5-.6-10.8-1.6-16H632c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zm-488 96c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm272-320h44.1c8.4 0 16.7 3.4 22.6 9.4l83.9 83.9c.8.8 1.1 1.9 1.8 2.8H416V160zm80 320c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-96h-16.4C545 364.7 522 352 496 352s-49 12.7-63.6 32H416v-96h160v96zM256 248v-16c0-4.4-3.6-8-8-8H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h240c4.4 0 8-3.6 8-8z"
+              ></path>
+            </svg>
+            <p><span>Estimated Delivery:</span> Dec 01 - Dec 03</p>
+          </div>
+          <div class="row">
+            <svg
+              class="w-5 h-4 shipping"
+              fill="currentColor"
+              stroke="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M509.5 184.6L458.9 32.8C452.4 13.2 434.1 0 413.4 0H98.6c-20.7 0-39 13.2-45.5 32.8L2.5 184.6c-1.6 4.9-2.5 10-2.5 15.2V464c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V199.8c0-5.2-.8-10.3-2.5-15.2zM32 199.8c0-1.7.3-3.4.8-5.1L83.4 42.9C85.6 36.4 91.7 32 98.6 32H240v168H32v-.2zM480 464c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16V232h448v232zm0-264H272V32h141.4c6.9 0 13 4.4 15.2 10.9l50.6 151.8c.5 1.6.8 3.3.8 5.1v.2z"
+              ></path>
+            </svg>
+            <p><span>Free Shipping:</span> On all orders over Rs 5000</p>
+          </div>
+        </div>
+      </form>
+
+      <div class="description">
+        <h4>Product Description</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil beatae
+          esse, incidunt officiis doloribus pariatur sunt blanditiis suscipit
+          nam eveniet alias reiciendis obcaecati excepturi ipsam quaerat
+          quibusdam consequuntur consequatur itaque, quasi, at aliquam
+          reprehenderit nisi. Recusandae, molestias similique quia reiciendis,
+          illo itaque hic autem alias amet, commodi dignissimos veritatis
+          cupiditate?
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,123 @@
+.product-details {
+  padding: 4rem 4rem;
+
+  .dtl-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+
+    .buy-box {
+      justify-self: left;
+
+      .title {
+        margin-bottom: 2rem;
+
+        h3 {
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      p.quantity {
+        font-weight: 600;
+      }
+
+      .count {
+        margin: 1rem 0 2rem;
+        padding: 1rem;
+        background: #f1f1f1;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-items: center;
+        align-items: center;
+        border-radius: 10px;
+        width: 200px;
+
+        i {
+          font-size: 14px;
+          color: #343a40;
+          cursor: pointer;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        input[type="number"] {
+          background: none;
+          border: none;
+          -moz-appearance: textfield;
+          text-align: center;
+          font-size: 1rem;
+          width: 100px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      input[type="submit"] {
+        font-family: "Nunito", sans-serif;
+        margin-bottom: 2rem;
+        padding: 0 10px;
+        height: 45px;
+        font-size: 1.1rem !important;
+        font-weight: 600;
+        width: 400px;
+      }
+
+      .login-btn {
+        color: #fff;
+        background-color: #343a40;
+        border: none;
+        border-radius: 10px;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #23272b;
+        }
+      }
+
+      .extra {
+        margin-bottom: 2rem;
+
+        .row {
+          display: grid;
+          grid-template-columns: min-content auto;
+          align-items: center;
+          margin-bottom: 0.75rem;
+        }
+
+        svg.delivery {
+          width: 25px;
+          height: 20px;
+          margin-right: 10px;
+        }
+
+        svg.shipping {
+          width: 25px;
+          height: 18px;
+          margin-right: 10px;
+        }
+
+        span {
+          font-weight: 700;
+          color: #161d25;
+        }
+      }
+
+      .description {
+        h4 {
+          font-size: 1.25rem;
+          margin-bottom: 0.5rem;
+        }
+        p {
+          max-width: 550px;
+        }
+      }
+    }
+  }
+}
