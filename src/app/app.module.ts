@@ -24,7 +24,8 @@ import { ProductDetailsComponent } from './components/collection/product-details
 import { AccountDetailsComponent } from './components/account/account-details/account-details.component';
 import { EditAccountDetailsComponent } from './components/account/edit-account-details/edit-account-details.component';
 import { EditAddressComponent } from './components/account/edit-address/edit-address.component';
-import { CartComponent } from './components/cart/cart.component';
+import { CartComponent } from './components/cart/cart/cart.component';
+import { CartItemComponent } from './components/cart/cart-item/cart-item.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { CartComponent } from './components/cart/cart.component';
     AccountDetailsComponent,
     EditAccountDetailsComponent,
     EditAddressComponent,
-    CartComponent
+    CartComponent,
+    CartItemComponent
   ],
   imports: [
     BrowserModule,

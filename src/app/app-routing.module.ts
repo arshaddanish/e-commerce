@@ -7,7 +7,7 @@ import { ForgotPasswordComponent } from './components/account/forgot-password/fo
 import { LoginComponent } from './components/account/login/login.component';
 import { RegisterComponent } from './components/account/register/register.component';
 import { ResetPasswordComponent } from './components/account/reset-password/reset-password.component';
-import { CartComponent } from './components/cart/cart.component';
+import { CartComponent } from './components/cart/cart/cart.component';
 import { ProductDetailsComponent } from './components/collection/product-details/product-details.component';
 import { ProductsComponent } from './components/collection/products/products.component';
 import { CollectionsComponent } from './components/home/collections/collections.component';
