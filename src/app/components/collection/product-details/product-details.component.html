@@ -20,7 +20,7 @@
         <p>Rs {{ product.cost }}</p>
       </div>
 
-      <form>
+      <form autocomplete="off" (ngSubmit)="onSubmit()">
         <p class="quantity">Quantity</p>
         <div class="count">
           <i class="fas fa-minus" (click)="decrCount()"></i>

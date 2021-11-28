@@ -24,6 +24,7 @@ import { ProductDetailsComponent } from './components/collection/product-details
 import { AccountDetailsComponent } from './components/account/account-details/account-details.component';
 import { EditAccountDetailsComponent } from './components/account/edit-account-details/edit-account-details.component';
 import { EditAddressComponent } from './components/account/edit-address/edit-address.component';
+import { CartComponent } from './components/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { EditAddressComponent } from './components/account/edit-address/edit-add
     ProductDetailsComponent,
     AccountDetailsComponent,
     EditAccountDetailsComponent,
-    EditAddressComponent
+    EditAddressComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

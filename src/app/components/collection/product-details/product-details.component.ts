@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { product } from 'src/app/data/product';
 import { PRODUCT_T } from 'src/app/data/PRODUCT_T';
 import { HostListener } from "@angular/core";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-details',
@@ -42,7 +43,7 @@ export class ProductDetailsComponent implements OnInit {
     }
   }
 
-  constructor(private route: ActivatedRoute) { this.getScreenSize(); }
+  constructor(private route: ActivatedRoute, private router: Router) { this.getScreenSize(); }
 
   ngOnInit(): void {
     this.collectionName = this.route.snapshot.params['name'];
@@ -57,5 +58,9 @@ export class ProductDetailsComponent implements OnInit {
   decrCount(): void {
     if (this.count > 1)
       this.count--;
+  }
+
+  onSubmit() {
+    this.router.navigate(["/cart"]);
   }
 }
