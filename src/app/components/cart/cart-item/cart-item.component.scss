@@ -1,0 +1,23 @@
+.cart-item {
+  img {
+    width: 250px;
+    height: 300px;
+    cursor: pointer;
+  }
+
+  .details {
+    background: #eeeeee;
+    padding: 0.5rem;
+  }
+
+  .remove-col {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+
+    .remove {
+      color: red;
+      cursor: pointer;
+    }
+  }
+}
