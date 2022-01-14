@@ -3,6 +3,7 @@
   grid-template-columns: repeat(4, auto);
   padding: 6rem 0rem;
   justify-items: center;
+  row-gap: 2rem;
 
   img {
     width: 40px;
@@ -22,5 +23,11 @@
       color: #666666;
       font-size: 14px;
     }
+  }
+}
+
+@media (max-width: 1200px) {
+  .features {
+    grid-template-columns: repeat(2, auto);
   }
 }

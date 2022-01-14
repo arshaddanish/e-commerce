@@ -19,3 +19,19 @@
     justify-items: center;
   }
 }
+
+@media (max-width: 1200px) {
+  .collections {
+    .items {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .collections {
+    .items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

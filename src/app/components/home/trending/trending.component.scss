@@ -14,3 +14,20 @@
     justify-items: center;
   }
 }
+
+@media (max-width: 1200px) {
+  .trending {
+    .items {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .trending {
+    .items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+

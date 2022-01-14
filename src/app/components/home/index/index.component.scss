@@ -6,3 +6,15 @@
     border-bottom: 1px solid #eee;
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
