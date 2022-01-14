@@ -37,3 +37,13 @@
     }
   }
 }
+
+@media (max-width: 992px) {
+  .landing {
+    grid-template-columns: 1fr;
+
+    .true {
+      margin-bottom: 0;
+    }
+  }
+}

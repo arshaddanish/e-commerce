@@ -28,3 +28,9 @@
     cursor: pointer;
   }
 }
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+}
