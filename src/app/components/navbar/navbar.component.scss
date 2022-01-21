@@ -15,6 +15,10 @@
     &:hover {
       cursor: pointer;
     }
+    img {
+      vertical-align: middle;
+      width: 100px;
+    }
   }
 
   .nav-items {
@@ -32,5 +36,11 @@
 @media (max-width: 576px) {
   .navbar {
     padding: 1rem 1.5rem;
+
+    h1 {
+      img {
+        width: 75px;
+      }
+    }
   }
 }
