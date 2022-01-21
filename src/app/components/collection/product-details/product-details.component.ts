@@ -33,7 +33,11 @@ export class ProductDetailsComponent implements OnInit {
   getScreenSize(event?) {
     this.screenHeight = window.innerHeight;
     this.screenWidth = window.innerWidth;
-    if (this.screenWidth < 768) {
+    if (this.screenWidth < 576) {
+      this.carouselWidth = 250;
+      this.carouselHeight = 250;
+    }
+    else if (this.screenWidth < 768) {
       this.carouselWidth = 300;
       this.carouselHeight = 300;
     }

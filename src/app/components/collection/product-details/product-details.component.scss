@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    row-gap: 4rem;
 
     .buy-box {
       justify-self: left;
@@ -119,5 +120,33 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 1200px) {
+  .product-details {
+    .dtl-box {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .product-details {
+    padding: 4rem 2rem 6rem;
+
+    .dtl-box {
+      .buy-box {
+        input[type="submit"] {
+          width: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .product-details {
+    padding: 4rem 1.5rem 6rem;
   }
 }
