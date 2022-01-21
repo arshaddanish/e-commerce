@@ -1,4 +1,4 @@
-Frontend for a basic Ecommerce website developed using Angular.
+Frontend for a basic E-commerce website developed using Angular.
 <br /><br />
 
 Features:
