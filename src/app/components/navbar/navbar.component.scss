@@ -5,7 +5,7 @@
   background: #fff;
   box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
   z-index: 99999;
-  padding: 1rem 4rem;
+  padding: 1rem 7rem;
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between;
@@ -17,14 +17,14 @@
     }
     img {
       vertical-align: middle;
-      width: 100px;
+      width: 90px;
     }
   }
 
   .nav-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
+    column-gap: 4rem;
     align-items: center;
   }
   .icon {
@@ -36,6 +36,10 @@
 @media (max-width: 576px) {
   .navbar {
     padding: 1rem 1.5rem;
+
+    .nav-items {
+      column-gap: 2rem;
+    }
 
     h1 {
       img {
