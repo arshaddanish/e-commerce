@@ -30,3 +30,31 @@
     row-gap: 2.5rem;
   }
 }
+
+@media (max-width: 1200px) {
+  .products {
+    .items {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .products {
+    .items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .products {
+    padding: 2rem 2rem 6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .products {
+    padding: 2rem 1rem 6rem;
+  }
+}
