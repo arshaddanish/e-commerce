@@ -58,12 +58,16 @@
     }
   }
 
+  .table-box {
+    overflow-x: scroll;
+  }
+
   table {
     width: 100%;
 
     th,
     td {
-      padding: 1rem 0;
+      padding: 1rem 1rem;
     }
 
     th {
@@ -80,5 +84,11 @@
     th:first-child {
       padding-left: 1rem;
     }
+  }
+}
+
+@media (max-width: 768px) {
+    .account {
+      padding: 4rem 1.5rem;
   }
 }
