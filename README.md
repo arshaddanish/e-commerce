@@ -1,4 +1,5 @@
 Frontend for a basic Ecommerce site developed using Angular.
+<br />
 
 Features:
 - Collections of products
